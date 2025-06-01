@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Stock Market Education Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>StockEdu</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="careers.html">Careers</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="services-header">
+        <h1>Our Services</h1>
+        <p>Comprehensive tools and education for your trading journey</p>
+    </section>
+
+    <!-- Services Tabs -->
+    <section class="services-tabs">
+        <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="screener">Stock Screener</button>
+            <button class="tab-btn" data-tab="lectures">Stock Market Lectures</button>
+            <button class="tab-btn" data-tab="algo">Algo Trading</button>
+        </div>
+
+        <div class="tab-content">
+            <!-- Stock Screener Tab -->
+            <div class="tab-pane active" id="screener">
+                <div class="service-content">
+                    <div class="service-image">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Advanced Stock Screener</h2>
+                        <p>Our powerful stock screener helps you find the perfect investment opportunities based on your criteria:</p>
+                        <ul>
+                            <li>Technical indicators</li>
+                            <li>Fundamental metrics</li>
+                            <li>Market cap filters</li>
+                            <li>Volume analysis</li>
+                        </ul>
+                        <a href="#" class="cta-button">Try Screener</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stock Market Lectures Tab -->
+            <div class="tab-pane" id="lectures">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2>Expert Market Lectures</h2>
+                        <p>Learn from industry professionals through our comprehensive lecture series:</p>
+                        <ul>
+                            <li>Market fundamentals</li>
+                            <li>Technical analysis</li>
+                            <li>Risk management</li>
+                            <li>Portfolio strategies</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Video Lectures Section -->
+                <div class="video-lectures">
+                    <h3>Featured Lectures</h3>
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" 
+                                        title="Introduction to Technical Analysis"
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            <h4>Introduction to Technical Analysis</h4>
+                            <p>Learn the basics of technical analysis and chart patterns</p>
+                        </div>
+                        
+                        <div class="video-card">
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" 
+                                        title="Risk Management Strategies"
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            <h4>Risk Management Strategies</h4>
+                            <p>Essential risk management techniques for traders</p>
+                        </div>
+                        
+                        <div class="video-card">
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" 
+                                        title="Portfolio Diversification"
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            <h4>Portfolio Diversification</h4>
+                            <p>How to build a well-diversified investment portfolio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Algo Trading Tab -->
+            <div class="tab-pane" id="algo">
+                <div class="service-content">
+                    <div class="service-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="service-text">
+                        <h2>Algorithmic Trading</h2>
+                        <p>Master the art of automated trading with our comprehensive algo trading platform:</p>
+                        <ul>
+                            <li>Strategy development</li>
+                            <li>Backtesting tools</li>
+                            <li>Real-time execution</li>
+                            <li>Performance analytics</li>
+                        </ul>
+                        <a href="#" class="cta-button">Start Trading</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest market insights and trading tips</p>
+            <form id="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST" class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+            <div id="form-message" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@stockedu.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 StockEdu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
