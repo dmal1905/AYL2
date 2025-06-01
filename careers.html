@@ -7,6 +7,275 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #2a3d66;
+            color: white;
+        }
+
+        .navbar .logo h1 {
+            font-size: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            color: #ff914d;
+        }
+
+        .nav-links .active {
+            color: #ff914d;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        /* Careers Header */
+        .careers-header {
+            background-color: #fff;
+            text-align: center;
+            padding: 50px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .careers-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .careers-header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Open Positions Section */
+        .open-positions {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .open-positions h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .job-listings {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .job-card {
+            background-color: #f1f1f1;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .job-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .job-card .location {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .job-card .description {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .job-card ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .job-card ul li {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .apply-button {
+            background-color: #ff914d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .apply-button:hover {
+            background-color: #e57e2d;
+        }
+
+        /* Internship Opportunities Section */
+        .internship-opportunities {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .internship-opportunities h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .internship-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .internship-card {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .internship-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .internship-card i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ff914d;
+        }
+
+        .internship-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .internship-card p {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Company Culture Section */
+        .company-culture {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .company-culture h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .culture-item {
+            background-color: #f1f1f1;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .culture-item i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #ff914d;
+        }
+
+        .culture-item h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .culture-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2a3d66;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .footer-content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        footer .footer-section {
+            width: 48%;
+        }
+
+        footer .footer-bottom {
+            font-size: 0.9rem;
+            color: #bbb;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+
+        footer .social-icons a:hover {
+            color: #ff914d;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -19,11 +288,6 @@
             <a href="services.html">Services</a>
             <a href="careers.html" class="active">Careers</a>
             <a href="about.html">About</a>
-        </div>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
     </nav>
 
@@ -169,4 +433,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
