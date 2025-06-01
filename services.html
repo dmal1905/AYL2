@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Artha Yantra Labs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-text">AYL</div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="blog.html">Blog</a>
+            <a href="careers.html">Careers</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section class="services-header">
+        <h1>Our Services</h1>
+        <p>Comprehensive tools and education for your trading journey</p>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="services-grid-section">
+        <div class="services-container">
+            <!-- Stock Screener -->
+            <div class="service-item" id="screener">
+                <div class="service-icon-large">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="service-content">
+                    <h2>Stock Screener</h2>
+                    <p>Our advanced stock screener helps you find the perfect investment opportunities based on your criteria. Filter stocks using technical indicators, fundamental metrics, market cap, and volume analysis.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Real-time market data</li>
+                        <li><i class="fas fa-check"></i> Customizable filters</li>
+                        <li><i class="fas fa-check"></i> Advanced technical analysis</li>
+                        <li><i class="fas fa-check"></i> Portfolio tracking</li>
+                    </ul>
+                    <a href="#" class="cta-button">Try Screener <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Algo Trading -->
+            <div class="service-item" id="algo">
+                <div class="service-icon-large">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="service-content">
+                    <h2>Algo Trading</h2>
+                    <p>Master the art of automated trading with our comprehensive algo trading platform. Develop, test, and deploy your trading strategies with confidence.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Strategy development</li>
+                        <li><i class="fas fa-check"></i> Backtesting tools</li>
+                        <li><i class="fas fa-check"></i> Real-time execution</li>
+                        <li><i class="fas fa-check"></i> Performance analytics</li>
+                    </ul>
+                    <a href="#" class="cta-button">Start Trading <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Stock Market Lectures -->
+            <div class="service-item" id="lectures">
+                <div class="service-icon-large">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="service-content">
+                    <h2>Stock Market Lectures</h2>
+                    <p>Learn from industry professionals through our comprehensive lecture series. From market fundamentals to advanced trading strategies, we've got you covered.</p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Expert-led courses</li>
+                        <li><i class="fas fa-check"></i> Interactive sessions</li>
+                        <li><i class="fas fa-check"></i> Practical examples</li>
+                        <li><i class="fas fa-check"></i> Certificate programs</li>
+                    </ul>
+                    <a href="#" class="cta-button">View Courses <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest market insights and trading tips</p>
+            <form id="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST" class="newsletter-form">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+            <div id="form-message" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@arthayantralabs.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Artha Yantra Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
